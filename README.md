@@ -13,3 +13,6 @@ On the CV end
 -- We can now detect faces from pictures and through webcam
 -- Work to be done to enable the extension to detect pupils and register the blinks
 -- More extensive work to be done to be able to read the pulse
+
+On the graphics end
+--- Basic UI/UX in process
