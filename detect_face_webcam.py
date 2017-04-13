@@ -1,11 +1,12 @@
 import cv2
 import sys
 
-cascPath = sys.argv[1]
-faceCascade = cv2.CascadeClassifier(cascPath)
+# cascPath = sys.argv[1]
+faceCascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+# faceCascade = cv2.CascadeClassifier(cascPath)
 
 # sets the videosource to the default webcam
-video_capture = cv2.VideoCapture(0)
+video_capture = cv2.VideoCapture(1)
 
 while True:
 	# capture frame-by-frame
@@ -18,8 +19,8 @@ while True:
 		gray,
 		scaleFactor=1.1,
 		minNeighbors=5,
-		minSize = (30, 30),
-		flags = cv2.cv.CV_HAAR_SCALE_IMAGE
+		minSize = (40, 40),
+		# flags = cv2.cv.CV_HAAR_SCALE_IMAGE
 		)
 
 	for(x,y,w,h) in faces:
@@ -30,9 +31,9 @@ while True:
 
 
 	# to exit
-	if cv2.waitKey(1) && OxFF == ord('q'):
+	if cv2.waitKey(1) & 0xFF == ord('q'):
 		break
 
-	# when everything is done, release the capture
-	video_capture.release()
-	cv2.destroyAllWindows()
+# when everything is done, release the capture
+video_capture.release()
+cv2.destroyAllWindows()

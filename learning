@@ -4,3 +4,13 @@ learning
 to read image 
 
 cv2.imread
+
+
+# Just a great way to end stuff when nothing's working
+if cv2.waitKey(1) && OxFF == ord('q'):
+	break
+
+
+# releasing the capture
+video_capture.release()
+cv2.destroyAllWindows()
