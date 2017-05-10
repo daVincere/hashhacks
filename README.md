@@ -1,18 +1,14 @@
 Mimasu
 
-A very basic chrome extension to monitor the health of the user/coder.
+A very basic chrome extension to monitor the health of the user/coder by:
+1) Measuring his pulse
+2) Tracking his eyeballs and eyelids
+3) Checking his stature
 
---Update--
-What have we done till now?
+To run,
 
--- A basic chrome extension has been built. 
--- Basic extension to instantiate a webcam built. 
--- we are building on top of it
+1) Clone the project.
+2) <code> cd Burisa </code>
+3) <code> python test.py </code>
 
-On the CV end
--- We can now detect faces from pictures and through webcam
--- Work to be done to enable the extension to detect pupils and register the blinks
--- More extensive work to be done to be able to read the pulse
-
-On the graphics end
---- Basic UI/UX in process
+== To be updated == 
